@@ -7,8 +7,8 @@ use App\Http\Controllers\Admin\StudentController;
 
 Route::get('/', [LandingController::class, 'index'])->name('landing');
 
-Route::prefix('admin')->group(function () {
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
     //untuk CRUD table student
     Route::resource('students', StudentController::class);
