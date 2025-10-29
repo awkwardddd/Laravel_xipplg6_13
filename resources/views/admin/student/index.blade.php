@@ -12,7 +12,7 @@
 
   <h1 class="mb-4">Data Siswa</h1> 
 
-  <a href="{{ route('admin.students.create') }}" class="btn btn-primary mb-3">+ Tambah Siswa</a> 
+  <a href="{{ route('students.create') }}" class="btn btn-primary mb-3">+ Tambah Siswa</a> 
 
  
 
