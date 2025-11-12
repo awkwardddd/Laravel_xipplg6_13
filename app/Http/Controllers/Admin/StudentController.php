@@ -68,13 +68,16 @@ class StudentController extends Controller
             'jenis_kelamin' => 'required',
             'nisn' => 'required',
         ]);
+        $student->update($validated);
+return redirect()->route('admin.students.index')->with('success', 'Data siswa berhasil diperbarui');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
-    {
-        //
+    public function destroy(student $student)
+    {   
+        $student->delete();
+    return back()->with('success', 'Data siswa berhasil dihapus!');
     }
 }
