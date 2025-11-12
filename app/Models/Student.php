@@ -15,4 +15,9 @@ class Student extends Model
         'jenis_kelamin',
         'nisn',
     ];
+    public function buku()
+{
+    return $this->hasMany(Buku::class);
+}
+
 }

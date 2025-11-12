@@ -12,4 +12,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
     //untuk CRUD table student
     Route::resource('students', StudentController::class);
+
+    Route::resource('buku', App\Http\Controllers\Admin\BukuController::class);
+
 });
