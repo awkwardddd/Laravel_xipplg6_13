@@ -16,7 +16,7 @@
     <nav>
       <a href="#home">Home</a>
       <a href="#lapangan">Lapangan</a>
-      <a href="#testimoni">Testimoni</a>
+      <a href="#testimoni">Testimonii</a>
        </nav>
     <button id="darkModeToggle" class="btn btn-outline">🌙</button>
     <button class="btn btn-primary" onclick="scrollToForm()">Booking Sekarang</button>
